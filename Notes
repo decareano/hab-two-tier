@@ -1,0 +1,3 @@
+this exercise fails here: 
+sudo docker-compose -p habquickstart up -d    //at this point it gets error: incorrect format, cannot start the docker daemon
+Point is: you cannot launch the containers 
