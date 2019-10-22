@@ -1,3 +1,7 @@
 this exercise fails here: 
 sudo docker-compose -p habquickstart up -d    //at this point it gets error: incorrect format, cannot start the docker daemon
 Point is: you cannot launch the containers 
+also, of interest: original error was: sudo requires a password, please configure it. 
+coderanger in SO: This usually means somewhere in a cookbook you are testing, 
+you are changing the sudoers config such that the kitchen user doesn't have nopasswd sudo. You need to either 
+not do that, or when running under Test Kitchen make sure you re-create the entry for the kitchen user.
